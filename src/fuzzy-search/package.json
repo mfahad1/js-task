@@ -1,0 +1,67 @@
+{
+  "_from": "fuzzy-search",
+  "_id": "fuzzy-search@2.0.1",
+  "_inBundle": false,
+  "_integrity": "sha512-8jVnHD74zXhderTPOg/zHz5UHo9FhGhrB//3YL+sa5tpxYnevqyzvkF2OsXic7FGfTgpVWHdMv3+q0nbmxC0Ag==",
+  "_location": "/fuzzy-search",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "fuzzy-search",
+    "name": "fuzzy-search",
+    "escapedName": "fuzzy-search",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/fuzzy-search/-/fuzzy-search-2.0.1.tgz",
+  "_shasum": "f96c34434d7a41543c257842ac60d62bcbcac934",
+  "_spec": "fuzzy-search",
+  "_where": "/home/mfahad/Documents/workspace/inkitt/jsTask",
+  "author": {
+    "name": "Wouter Rutgers"
+  },
+  "bugs": {
+    "url": "https://github.com/wouter2203/fuzzy-search/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "Simple fuzzy search",
+  "devDependencies": {
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "chai": "^3.5.0",
+    "cross-env": "^5.0.5",
+    "eslint": "^3.10.2",
+    "laravel-mix": "^1.4.2",
+    "mocha": "^3.1.2"
+  },
+  "homepage": "https://github.com/wouter2203/fuzzy-search#readme",
+  "keywords": [
+    "fuzzy",
+    "search",
+    "javascript"
+  ],
+  "license": "ISC",
+  "main": "./dist/FuzzySearch.js",
+  "name": "fuzzy-search",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wouter2203/fuzzy-search.git"
+  },
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js && rm mix-manifest.json",
+    "lint": "node node_modules/eslint/bin/eslint src",
+    "prod": "cross-env NODE_ENV=production webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js && rm mix-manifest.json",
+    "run:test": "mocha tests/compiled/test.js",
+    "test": "cross-env NODE_ENV=development TESTING=true webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js && rm mix-manifest.json",
+    "watch": "cross-env NODE_ENV=development webpack --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js && rm mix-manifest.json"
+  },
+  "tonicExampleFilename": "example.js",
+  "version": "2.0.1"
+}
